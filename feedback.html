@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Define the title of the webpage -->
+    <title>Antique Pocket Watch - Customer Feedback</title>
+    <!-- Link to an external CSS file for styling -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <!-- Header section containing navigation -->
+    <header>
+        <nav>
+            <!-- Unordered list for navigation links -->
+            <ul>
+                <!-- Navigation link: Home -->
+               <li><a href="index.html">Home</a></li>
+               <!-- Navigation link: Product -->
+               <li><a href="product.html">Product</a></li>
+               <!-- Navigation link: Feedback -->
+               <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </header><!-- Inside the #rate section -->
+
+    <!-- Section for collecting customer feedback -->
+    <section id="rate">
+         <!-- Subheading for the feedback section -->
+        <h2>Feedback</h2>
+        <!-- Introduction to the feedback form -->
+        <p>Did you like your antique pocket watch? We'd love to hear your thoughts!</p>
+
+        <!-- Container to display feedback items -->
+        <div id="feedback-container">
+            <!-- Feedback items will be dynamically added here -->
+        </div>
+        <!-- Feedback submission form -->
+        <form id="feedback-form">
+            <!-- Label for the rating input -->
+            <label for="rating">Rate the product:</label>
+            <!-- Range input for rating with a scale from 1 to 5 -->
+            <input type="range" id="rating" name="rating" min="1" max="5">
+            
+            <!-- Label for the comment input -->
+            <label for="comment">Leave a comment:</label>
+            <!-- Textarea input for leaving a comment, with a required attribute -->
+            <textarea id="comment" name="comment" rows="4" required></textarea>
+            
+            <!-- Submit button for the feedback form -->
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+    
+    <!-- Include an external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
